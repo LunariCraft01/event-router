@@ -1,0 +1,18 @@
+export enum InternalServiceMessage{
+    RabbitMQModuleTitle="RabbitMQ module: ",
+    RabbitMQConnectionError= RabbitMQModuleTitle   + "Missing connection object",
+    RabbitMQErrorDefinedString=RabbitMQModuleTitle +"RabbitMQ connection string is not configured",
+    RabbitMQCreateChannelError="RabbitMQ can't create channel: ",
+    RabbitMQConnectionSuccess="RabbitMQ connection success",
+    RabbitMQException = `${RabbitMQModuleTitle}, Errors happens:`,
+    RabbitMQChannelError=RabbitMQModuleTitle +"RabbitMQ channel error: ",
+    RabbitMQChannelSuccess=RabbitMQModuleTitle +"RabbitMQ channel success",
+    RabbitMQMessageError=RabbitMQModuleTitle + "RabbitMQ message error: ",
+    RabbitMQSendQueue=RabbitMQModuleTitle +"RabbitMQ was sending queue successfull",
+    RabbitMQCloseConnectionError=RabbitMQModuleTitle + "RabbitMQ close connection error: ",
+    RabbitMQCloseConnectionSuccess=RabbitMQModuleTitle +"RabbitMQ close connection success",
+    RabbitMQSendQueueError=RabbitMQModuleTitle + "RabbitMQ can't to send queue",
+    RabbitMQUnnableSerialization=RabbitMQModuleTitle+ "Empty context for RabbitMQ Queue. Abort",
+    RabbitMQSendMessageSuccess=RabbitMQModuleTitle + "Message sent to queue",
+    RabbitMQEmptyArguments=RabbitMQModuleTitle + "Empty value arguments: exchange, queue, routeType properties are required",
+}
